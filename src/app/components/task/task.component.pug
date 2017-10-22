@@ -1,0 +1,25 @@
+
+mat-card.card( (dblclick) = "edit($event)" )
+    mat-card-title.title_row
+
+        .title( *ngIf = "!isEditing") {{title}}
+        .title( *ngIf = "isEditing")
+            .edit
+                mat-form-field.field
+                    input( matInput, [(ngModel)]= "title", required , placeholder="title")
+                .field
+                    p-editor([(ngModel)]= "description",[style]="{'height':'320px'}", [placeholder] = "Description" )
+
+        .actions
+            button( *ngIf = "!isEditing" mat-icon-button , color="primary", (click) = "remove($event)" )
+                mat-icon clear
+            button( *ngIf = "isEditing" mat-icon-button , color="primary", (click) = "editing($event)" )
+                mat-icon done
+
+    mat-card-content.content( *ngIf = "!isEditing")
+        p-editor( [(ngModel)] = "description", [readonly] = true )
+            p-header
+
+    mat-card-footer
+        .footer
+            label {{author.username}}

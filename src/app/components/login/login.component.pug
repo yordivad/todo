@@ -1,0 +1,16 @@
+.login
+    .login_title
+        span Login your account
+    .login_fields
+        .login_fields__user
+            i.material-icons account_circle
+            input#user(type="text", placeholder="User", required=true, [(ngModel)] = "user" )
+        .login_fields__password
+            i.material-icons lock
+            input#password(type="password", placeholder="Password" required=true, [(ngModel)] = "password")
+        .login_fields__submit
+            input#login(type="submit", value="Log In", (click) = "login($event)")
+            .forgot
+                a(href="#") Forgotten password?
+    .disclaimer
+        p Please login in the application to access at dashboard, we are using cookies {{user}}

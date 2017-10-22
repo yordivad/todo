@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Users\\roygi\\scoop\\apps\\nodejs-lts\\current\\node.exe',
+1 verbose cli   'C:\\Users\\roygi\\scoop\\apps\\nodejs-lts\\current\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.4
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle test@1.0.0~prestart: test@1.0.0
+6 silly lifecycle test@1.0.0~prestart: no script for prestart, continuing
+7 info lifecycle test@1.0.0~start: test@1.0.0
+8 verbose lifecycle test@1.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle test@1.0.0~start: PATH: C:\Users\roygi\scoop\apps\nodejs-lts\6.11.4\node_modules\npm\bin\node-gyp-bin;C:\Users\roygi\crossover\todo\backend\node_modules\.bin;C:\Users\roygi\scoop\apps\cmder\current\bin;C:\Users\roygi\scoop\apps\cmder\current\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\roygi\scoop\apps\cmder\current\vendor\conemu-maximus5;C:\Users\roygi\scoop\apps\cmder\current\vendor\conemu-maximus5\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Plantronics\Spokes3G\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\tools\karaf\apache-karaf-4.1.2\bin;C:\tools\maven\apache-maven-3.5.0\bin;C:\PROGRA~2\Groovy\GROOVY~1.0\bin;C:\tools\gradle\gradle-4.2.1\bin;C:\Program Files (x86)\scala\bin;C:\tools\sbt\bin;C:\tools\tomcat\apache-tomcat-9.0.1\bin;C:\tools\activemq\apache-activemq-5.15.1\bin;C:\Program Files\MATLAB\R2017a\runtime\win64;C:\Program Files\MATLAB\R2017a\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\roygi\scoop\apps\nodejs-lts\current\bin;C:\Users\roygi\scoop\apps\nodejs-lts\current;C:\Users\roygi\scoop\shims;C:\Users\roygi\AppData\Local\Microsoft\WindowsApps;C:\Users\roygi\AppData\Local\atom\bin;C:\Users\roygi\scoop\apps\git\current\usr\bin;C:\Users\roygi\scoop\apps\git\current\usr\share\vim\vim74;C:\Users\roygi\scoop\apps\cmder\current\
+10 verbose lifecycle test@1.0.0~start: CWD: C:\Users\roygi\crossover\todo\backend
+11 silly lifecycle test@1.0.0~start: Args: [ '/d /s /c', 'node index.js' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at Object.exports._errnoException (util.js:1020:11)
+12 verbose stack     at process.kill (internal/process.js:191:18)
+12 verbose stack     at process.listener (C:\Users\roygi\scoop\apps\nodejs-lts\6.11.4\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Users\roygi\scoop\apps\nodejs-lts\6.11.4\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Users\roygi\scoop\apps\nodejs-lts\6.11.4\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd C:\Users\roygi\crossover\todo\backend
+14 error Windows_NT 10.0.15063
+15 error argv "C:\\Users\\roygi\\scoop\\apps\\nodejs-lts\\current\\node.exe" "C:\\Users\\roygi\\scoop\\apps\\nodejs-lts\\current\\node_modules\\npm\\bin\\npm-cli.js" "run" "start"
+16 error node v6.11.4
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

@@ -1,0 +1,19 @@
+mat-toolbar
+    span Crossover Todo
+
+.dashboard
+    mat-card.box
+        mat-card-title.title In Progress
+        mat-card-content.content
+            .list#progress
+                .item(*ngFor = "let task of noncompleted")
+                    task( [task]="task", [drag] = "task", (edited) = "edit($event)" , (deleted) = "remove($event)")
+        mat-card-actions.actions
+            button#addtask(mat-button color="primary", (click) = "newone()") add task
+
+    mat-card.box
+        mat-card-title.title Completed
+        mat-card-content.content
+            .list#completed
+                .item(*ngFor = "let task of completed")
+                    task([task]="task"  drop, (edited) = "edit($event)" , (deleted) = "remove($event)", (dropped) = "dropped($event)")

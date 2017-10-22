@@ -1,0 +1,32 @@
+
+
+
+
+.dashboard {
+  display: flex;
+  margin: 10px;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    display: block;
+  }
+
+  .box {
+    flex:1;
+    margin: 10px;
+    .content {
+      .list {
+        height: 400px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        .item {
+          margin: 10px;
+        }
+      }
+    }
+    .actions{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
