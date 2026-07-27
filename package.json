@@ -99,7 +99,7 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-concat-plugin": "^1.4.2",
-    "webpack-dev-server": "2.9.2",
+    "webpack-dev-server": "5.2.6",
     "webpack-merge": "^4.1.0"
   }
 }
